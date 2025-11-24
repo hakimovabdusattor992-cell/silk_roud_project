@@ -211,6 +211,153 @@ span{
 
 }
 
+.cartin-link{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.cartin-link_sp{
+    font-size: 28px;
+    line-height: 18px;
+    color: #666666;
+}
+
+
+
+/* footer*/
+
+
+.mega-footer {
+  background: #0789bf; 
+  color: #e6f7fb;
+  position: relative;
+  overflow: hidden;
+  padding: 48px 16px;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+
+.brand-col .brand {
+  font-size: 34px;
+  margin: 0 0 18px 0;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.brand-col h4,
+.links-col h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.brand-col h4::after,
+.links-col h4::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 2px;
+  background: rgba(255,255,255,0.25);
+  margin-top: 8px;
+}
+
+
+.contact .contact-item {
+  display: flex;
+  gap: 12px;
+  margin: 10px 0;
+  align-items: center;
+}
+.contact .icon {
+  font-size: 18px;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.small {
+  font-size: 13px;
+}
+.muted {
+  opacity: 0.9;
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+
+.store-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.store-btn img {
+  display: block;
+  width: 140px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.links-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.links-col ul li {
+  padding: 6px 0;
+  font-size: 14px;
+  color: rgba(255,255,255,0.92);
+}
+
+
+.divider {
+  border: none;
+  height: 1px;
+  background: rgba(255,255,255,0.12);
+  margin: 26px 0;
+}
+.bottom {
+  text-align: center;
+  padding-bottom: 6px;
+  color: rgba(255,255,255,0.92);
+  font-size: 14px;
+}
+
+
+.decorative {
+  position: absolute;
+  right: -80px;
+  top: -40px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.12;
+  background-image: url("/mnt/data/87fd3c35-bb0d-4137-96a1-f6e26812f06d.png");
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px);
+}
+
+
+@media (max-width: 880px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .decorative { display: none; }
+  .brand-col .brand { font-size: 28px; }
+  .store-btn img { width: 130px; height: 36px; }
+}
+
 
 @media (min-width: 975px) {
   .nav-toggle{
