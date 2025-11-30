@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./singUp.css" />
-    <title>SING UP</title>
+    <link rel="stylesheet" href="./css/mainCard.css" />
+    <title>Uzbek-sotuv</title>
   </head>
   <body>
     <header>
@@ -13,6 +13,13 @@
           <span>Abdusattor</span>
         </a>
         <nav class="nav-div">
+          <div class="nav-input_div">
+            <input
+              class="nav-input"
+              type="text"
+              placeholder="Search essentials, groceries and more..."
+            />
+          </div>
           <!-- <ul class="link-ul">
                     <li  class="link-li"><a href="#Home">Home</a></li>
                     <li  class="link-li"><a href="#Services">Services</a></li>
@@ -20,7 +27,16 @@
                     <li  class="link-li"><a href="#Contact">Contact</a></li>
                 </ul> -->
           <div class="btn-wrapper">
-            <button class="button-in">Sign UP</button>
+              <a class="cartin-link" href="">
+              <img
+                class="cartin-link__img"
+                src="/img/Buy.png"
+                alt=""
+                width="40"
+                height="40"
+              />
+              <span class="cartin-link_sp">Cart</span>
+            </a>
           </div>
         </nav>
         <button class="toggile-btn">
@@ -41,57 +57,25 @@
                     <li  class="tg-link-li link-li"><a href="#Contact">Contact</a></li>
                 </ul> -->
           <div class="tg-btn-wrapper">
-            <button class="button-in btn">Sign UP</button>
+          
+            <a class="cartin-link" href="#">
+              <img
+                class="cartin-link__img"
+                src="/img/Buy.png"
+                alt=""
+                width="34"
+                height="34"
+              />
+              <span class="cartin-link_sp">Cart</span>
+            </a>
+            <!-- <button class="button-in btn">Get start</button> -->
           </div>
         </nav>
       </div>
     </header>
+<main class="container" >
 
-    <main>
-      <section class="form-section">
-        <div class="form-container">
-          <h2>Create Account</h2>
-
-          <form id="registerForm">
-            <label for="fullname">Full Name</label>
-            <input
-              type="text"
-              id="fullname"
-              placeholder="Enter your name"
-              required
-            />
-
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Enter your email"
-              required
-            />
-
-            <label for="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              placeholder="Enter your password"
-              required
-            />
-
-            <label for="role">Your Role</label>
-            <select id="role" required>
-              <option value="">Select your role</option>
-              <option value="admin">Admin</option>
-              <option value="user">User</option>
-              <option value="manager">Manager</option>
-            </select>
-
-            <p id="errorMsg" class="error-msg"></p>
-
-            <button type="submit" class="btn-submit">SUBMIT</button>
-          </form>
-        </div>
-      </section>
-    </main>
+</main>
 
     <footer class="mega-footer">
       <div class="container">
@@ -167,6 +151,6 @@
       <div class="decorative" aria-hidden="true"></div>
     </footer>
 
-    <script src="./singUp.js"></script>
+    <script src="./js/Index.js"></script>
   </body>
 </html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/singUp.css" />
+    <title>SING UP</title>
+  </head>
+  <body>
+    <header>
+      <div class="container header-content">
+        <a class="logo-link" href="./index.html">
+          <div class="logo-icon">A</div>
+          <span>Abdusattor</span>
+        </a>
+        <nav class="nav-div">
+          <!-- <ul class="link-ul">
+                    <li  class="link-li"><a href="#Home">Home</a></li>
+                    <li  class="link-li"><a href="#Services">Services</a></li>
+                    <li  class="link-li"><a href="#About">About</a></li>
+                    <li  class="link-li"><a href="#Contact">Contact</a></li>
+                </ul> -->
+          <div class="btn-wrapper">
+            <button class="button-in">Sign UP</button>
+          </div>
+        </nav>
+        <button class="toggile-btn">
+          <img
+            class="toggile-btn__img"
+            src="./img/list.png"
+            alt="img"
+            width="24"
+            height="11"
+          />
+        </button>
+
+        <nav class="nav-toggle">
+          <!-- <ul class="tg-link-ul">
+                    <li  class="tg-link-li link-li"><a href="#Home">Home</a></li>
+                    <li  class="tg-link-li link-li"><a href="#Services">Services</a></li>
+                    <li  class="tg-link-li link-li"><a href="#About">About</a></li>
+                    <li  class="tg-link-li link-li"><a href="#Contact">Contact</a></li>
+                </ul> -->
+          <div class="tg-btn-wrapper">
+            <button class="button-in btn">Sign UP</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="form-section">
+        <div class="form-container">
+          <h2>Create Account</h2>
+
+          <form id="registerForm">
+            <label for="fullname">Full Name</label>
+            <input
+              type="text"
+              id="fullname"
+              placeholder="Enter your name"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+              required
+            />
+
+            <label for="role">Your Role</label>
+            <select id="role" required>
+              <option value="">Select your role</option>
+              <option value="admin">Admin</option>
+              <option value="user">User</option>
+              <option value="manager">Manager</option>
+            </select>
+
+            <p id="errorMsg" class="error-msg"></p>
+
+            <button type="submit" class="btn-submit">SUBMIT</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mega-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="brand-col">
+            <h1 class="brand">MegaMart</h1>
+
+            <div class="contact">
+              <h4>Contact Us</h4>
+              <div class="contact-item">
+                <span class="icon">📱</span>
+                <div>
+                  <div class="small">Whats App</div>
+                  <div class="muted">+1 202-918-2132</div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="icon">📞</span>
+                <div>
+                  <div class="small">Call Us</div>
+                  <div class="muted">+1 202-918-2132</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="download">
+              <h4>Download App</h4>
+              <div class="store-buttons">
+                <a href="#" class="store-btn" aria-label="App Store">
+                  <img
+                    src="https://via.placeholder.com/140x40?text=App+Store"
+                    alt="App Store"
+                  />
+                </a>
+                <a href="#" class="store-btn" aria-label="Google Play">
+                  <img
+                    src="https://via.placeholder.com/140x40?text=Google+Play"
+                    alt="Google Play"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="links-col">
+            <h4>Most Popular Categories</h4>
+            <ul>
+              <li>Staples</li>
+              <li>Beverages</li>
+              <li>Personal Care</li>
+              <li>Home Care</li>
+              <li>Baby Care</li>
+              <li>Vegetables & Fruits</li>
+              <li>Snacks & Foods</li>
+              <li>Dairy & Bakery</li>
+            </ul>
+          </div>
+
+          <div class="links-col">
+            <h4>Customer Services</h4>
+            <ul>
+              <li>About Us</li>
+              <li>Terms & Conditions</li>
+              <li>FAQ</li>
+              <li>Privacy Policy</li>
+              <li>E-waste Policy</li>
+              <li>Cancellation & Return Policy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="decorative" aria-hidden="true"></div>
+    </footer>
+
+    <script src="./js/singUp.js"></script>
+  </body>
+</html>
