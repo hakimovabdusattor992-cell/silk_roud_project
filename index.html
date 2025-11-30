@@ -14,7 +14,7 @@
             </a>
             <nav class="nav-div">
                 <div class="nav-input_div">
-                    <input class="nav-input" type="text">
+                    <input class="nav-input" type="text" placeholder="Search essentials, groceries and more...">
                 </div>
                 <!-- <ul class="link-ul">
                     <li  class="link-li"><a href="#Home">Home</a></li>
@@ -23,8 +23,8 @@
                     <li  class="link-li"><a href="#Contact">Contact</a></li>
                 </ul> -->
                 <div class="btn-wrapper">
-                    <button class="button-in" ><a href="./logoin.html">Sign in</a></button>
-                    <button class="button-in">Sign up</button>
+                    <button class="button-in" ><a href="./singIn.html">Sign in</a></button>
+                    <button class="button-in"><a href="./singUp.html">Sign up</a></button>
                     <a class="cartin-link"
                      href="">
                         <img class="cartin-link__img" src="/img/Buy.png" alt="" width="40" height="40">
@@ -44,8 +44,8 @@
                     <li  class="tg-link-li link-li"><a href="#Contact">Contact</a></li>
                 </ul> -->
                 <div class="tg-btn-wrapper">
-                    <button class="button-in btn " ><a href="./logoin.html">Sign in</a></button>
-                    <button class="button-in  btn">Sign up</button>
+                    <button class="button-in btn " ><a href="./singIn.js">Sign in</a></button>
+                    <button class="button-in  btn"><a href="./singUp.js">Sign in</a></button>
                     <a class="cartin-link"
                      href="#">
                         <img class="cartin-link__img" src="/img/Buy.png" alt="" width="34" height="34">
@@ -57,7 +57,88 @@
         </div>
     </header>
     
-    <main>
+    <main class="container">
+    
+
+  <!-- HERO BANNER -->
+  <section class="hero">
+    <div class="hero-content">
+      <h4>Best Deal Online on smart watches</h4>
+      <h1>SMART WEARABLE.</h1>
+      <p>UP TO <span>80% OFF</span></p>
+    </div>
+    <img src="watch.png" class="hero-img" alt="smartwatch" />
+  </section>
+
+  <!-- SMARTPHONES SECTION -->
+  <section class="section">
+    <div class="section-header">
+      <h2>Grab the best deal on <span>Smartphones</span></h2>
+      <a href="#">View All</a>
+    </div>
+
+    <div class="product-row">
+      <div class="product-card">
+        <img src="s23.png" alt="">
+        <h4>Galaxy S23 Ultra</h4>
+        <p class="price">₹29999 <span>₹49990</span></p>
+        <p class="save">Save: ₹20000</p>
+      </div>
+
+      <div class="product-card">
+        <img src="m13.png" alt="">
+        <h4>Galaxy M13 (4GB)</h4>
+        <p class="price">₹10499 <span>₹14990</span></p>
+        <p class="save">Save: ₹4500</p>
+      </div>
+
+      <div class="product-card">
+        <img src="m53.png" alt="">
+        <h4>Galaxy M53 (6GB)</h4>
+        <p class="price">₹16999 <span>₹19990</span></p>
+        <p class="save">Save: ₹3000</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOP CATEGORIES -->
+  <section class="section">
+    <div class="section-header">
+      <h2>Shop From <span>Top Categories</span></h2>
+      <a href="#">View All</a>
+    </div>
+
+    <div class="categories">
+      <div class="cat"><img src="mobile.png"><p>Mobile</p></div>
+      <div class="cat"><img src="cosmetic.png"><p>Cosmetics</p></div>
+      <div class="cat"><img src="electronics.png"><p>Electronics</p></div>
+      <div class="cat"><img src="sofa.png"><p>Furniture</p></div>
+      <div class="cat"><img src="watch.png"><p>Watches</p></div>
+      <div class="cat"><img src="decor.png"><p>Decor</p></div>
+    </div>
+  </section>
+
+  <!-- TOP BRANDS SLIDER -->
+  <section class="section">
+    <div class="section-header">
+      <h2>Top <span>Electronics Brands</span></h2>
+      <a href="#">View All</a>
+    </div>
+
+    <div class="slider" id="brand-slider">
+      <div class="slide">
+        <img src="apple-banner.png" width="389" height="207">
+      </div>
+      <div class="slide">
+        <img src="realme-banner.png" width="389" height="207">
+      </div>
+      <div class="slide">
+        <img src="xiaomi-banner.png" width="389" height="207">
+      </div>
+    </div>
+  </section>
+
+
 
     </main>
    
@@ -134,6 +215,6 @@
 </footer>
 
 
-    <script src="./app.js"></script>
+    <script src="./Index.js"></script>
 </body>
 </html>

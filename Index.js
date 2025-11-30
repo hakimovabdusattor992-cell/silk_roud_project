@@ -11,6 +11,22 @@ toggileBtn.addEventListener("click",()=>{
     }
 })
 
+let index = 0;
+
+function slider() {
+  const slides = document.querySelectorAll("#brand-slider .slide");
+  index++;
+
+  if (index >= slides.length) index = 0;
+
+  slides.forEach((slide, i) => {
+    slide.style.transform = `translateX(-${index * 100}%)`;
+  });
+}
+
+setInterval(slider, 3000);
+
+
 
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -26,7 +42,7 @@ const db = new Pool({
  host: "localhost",
  user: "myproject",
  password: "a0b4d1u2",   // change if needed
- database: "test_db",
+ database: "myproject",
  port: 5432
 });
 
