@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/hakimovabdusattor992-cell/silk_roud_project#readme",
   "dependencies": {
-    "express": "^5.1.0"
+    "body-parser": "^2.2.1",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "pg": "^8.16.3"
   }
 }
