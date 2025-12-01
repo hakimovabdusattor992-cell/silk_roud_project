@@ -6,6 +6,7 @@ const app = express();
 
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static("public"));
 
 // ----- POSTGRES CONNECTION -----
 const db = new Pool({
@@ -21,7 +22,7 @@ const db = new Pool({
 // Read (list users)
 app.get("/", async (req, res) => {
  const result = await db.query("SELECT * FROM users ORDER BY id ASC");
- res.render("users", { users: result.rows });
+ res.render("index", { users: result.rows });
 });
 
 // Create user
