@@ -39,7 +39,7 @@ app.get("/main", async (req, res) => {
 });
 app.get("/mainCard", async (req, res) => {
  
- res.render("mainCard", { users: result.rows });
+ res.render("mainCard");
 });
 
 
