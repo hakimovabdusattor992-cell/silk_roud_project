@@ -25,6 +25,24 @@ app.get("/", async (req, res) => {
  res.render("index", { users: result.rows });
 });
 
+app.get("/singIn", async (req, res) => {
+ 
+ res.render("singIn");
+});
+app.get("/singUp", async (req, res) => {
+ 
+ res.render("singUp");
+});
+app.get("/main", async (req, res) => {
+ 
+ res.render("main");
+});
+app.get("/mainCard", async (req, res) => {
+ 
+ res.render("mainCard", { users: result.rows });
+});
+
+
 // Create user
 app.post("/add", async (req, res) => {
  const { name, email } = req.body;
