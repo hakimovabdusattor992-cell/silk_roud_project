@@ -19,10 +19,13 @@ const db = new Pool({
 
 // ----- ROUTES -----
 
-// Read (list users)
+
 app.get("/", async (req, res) => {
- const result = await db.query("SELECT * FROM users ORDER BY id ASC");
- res.render("index", { users: result.rows });
+  const generals = await db.query("SELECT * FROM generals_cards ORDER BY id ASC");
+
+  res.render("index", {
+    generals_cards: generals.rows
+  });
 });
 
 app.get("/singIn", async (req, res) => {
